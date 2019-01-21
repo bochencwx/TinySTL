@@ -1,3 +1,5 @@
+/*
+
 #include "../src/tinySTL_alloc.h"
 
 #include <iostream>
@@ -18,3 +20,5 @@ int main()
 	}
 	return 0;
 }
+
+*/

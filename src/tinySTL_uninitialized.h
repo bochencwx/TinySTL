@@ -4,6 +4,7 @@
 #include "tinySTL_iterator.h"
 #include "tinySTL_type_traits.h"
 #include "tinySTL_construct.h"
+#include "tinySTL_algorithm.h"
 
 namespace TinySTL {
 
@@ -15,10 +16,7 @@ namespace TinySTL {
 	template <typename ForwardIterator, typename Size, typename T>
 	ForwardIterator __uninitialized_fill_n_aux(ForwardIterator first, Size n, const T& x, true_type)
 	{
-		// fill_n算法
-		for (; n > 0; --n, ++first)
-			*first = x;
-		return first;
+		return fill_n(first, n, x);
 	}
 
 	// 非POD时的fill_n处理
@@ -49,11 +47,7 @@ namespace TinySTL {
 	template <typename InputIterator, typename ForwardIterator>
 	ForwardIterator __uninitialized_copy_aux(InputIterator first, InputIterator last, ForwardIterator result, true_type)
 	{
-		// 之后实现了copy算法后再使用copy算法
-		ForwardIterator cur = result;
-		for (; first != last; ++first, ++cur)
-			construct(&*cur, *first);
-		return cur;
+		return copy(first, last, result);
 	}
 
 	// 非POD时的copy处理
@@ -82,12 +76,9 @@ namespace TinySTL {
 
 	// POD时的fill处理
 	template <typename ForwardIterator, typename T>
-	ForwardIterator __uninitialized_fill_aux(ForwardIterator first, ForwardIterator last, const T& x, true_type)
+	void __uninitialized_fill_aux(ForwardIterator first, ForwardIterator last, const T& x, true_type)
 	{
-		// 之后实现了copy算法后再使用fill算法
-		ForwardIterator cur = first;
-		for (; cur != last; ++cur)
-			construct(&*cur, x);
+		fill(first, last, x);
 	}
 
 	// 非POD时的fill处理

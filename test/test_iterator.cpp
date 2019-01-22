@@ -1,3 +1,5 @@
+/*
+
 #include "../src/tinySTL_iterator.h"
 #include <iostream>
 #include <typeinfo>
@@ -28,3 +30,5 @@ int main()
 	return 0;
 
 }
+
+*/

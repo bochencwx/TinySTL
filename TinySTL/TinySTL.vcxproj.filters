@@ -18,10 +18,16 @@
     <ClCompile Include="..\src\tinySTL_alloc.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\test\alloc_test.cpp">
+    <ClCompile Include="..\src\tinySTL_vector.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\test\iterator_test.cpp">
+    <ClCompile Include="..\test\test_alloc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\test\test_iterator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\test\test_vector.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -39,6 +45,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\src\tinySTL_type_traits.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tinySTL_vector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tinySTL_algorithm.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

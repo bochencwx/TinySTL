@@ -118,7 +118,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\test_list.cpp" />
     <ClCompile Include="..\src\tinySTL_alloc.cpp" />
+    <ClCompile Include="..\src\tinySTL_list.cpp" />
     <ClCompile Include="..\src\tinySTL_vector.cpp" />
     <ClCompile Include="..\test\test_alloc.cpp" />
     <ClCompile Include="..\test\test_iterator.cpp" />
@@ -129,6 +131,7 @@
     <ClInclude Include="..\src\tinySTL_alloc.h" />
     <ClInclude Include="..\src\tinySTL_construct.h" />
     <ClInclude Include="..\src\tinySTL_iterator.h" />
+    <ClInclude Include="..\src\tinySTL_list.h" />
     <ClInclude Include="..\src\tinySTL_type_traits.h" />
     <ClInclude Include="..\src\tinySTL_uninitialized.h" />
     <ClInclude Include="..\src\tinySTL_vector.h" />

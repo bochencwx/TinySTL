@@ -1,3 +1,5 @@
+/*
+
 #include <iostream>
 
 #include "../src/tinySTL_vector.h"
@@ -66,3 +68,5 @@ int main()
 
 	return 0;
 }
+
+*/

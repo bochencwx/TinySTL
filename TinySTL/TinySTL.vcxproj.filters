@@ -62,5 +62,11 @@
     <ClInclude Include="..\src\tinySTL_list.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\tinySTL_rbtree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tinySTL_pair.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

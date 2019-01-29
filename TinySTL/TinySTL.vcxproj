@@ -127,11 +127,13 @@
     <ClCompile Include="..\test\test_vector.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\src\tinySTL_pair.h" />
     <ClInclude Include="..\src\tinySTL_algorithm.h" />
     <ClInclude Include="..\src\tinySTL_alloc.h" />
     <ClInclude Include="..\src\tinySTL_construct.h" />
     <ClInclude Include="..\src\tinySTL_iterator.h" />
     <ClInclude Include="..\src\tinySTL_list.h" />
+    <ClInclude Include="..\src\tinySTL_rbtree.h" />
     <ClInclude Include="..\src\tinySTL_type_traits.h" />
     <ClInclude Include="..\src\tinySTL_uninitialized.h" />
     <ClInclude Include="..\src\tinySTL_vector.h" />
